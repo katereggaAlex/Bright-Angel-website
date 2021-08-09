@@ -30,7 +30,7 @@ function Resume() {
 
   return (
     <Container fluid className="resume-section">
-      <Particle />
+      
       <Container>
           <Button variant="primary" href={pdf} target="_blank">
           <AiOutlineDownload />&nbsp;Download Admission Form

@@ -6,7 +6,7 @@ import Fees from "./components/Fees/Fees";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
-import Projects from "./components/Teachers/Projects";
+import Teachers from "./components/Teachers/Teachers";
 import Footer from "./components/Footer";
 import Resume from "./components/Admission/Resume";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -35,7 +35,7 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
+          <Route path="/Teachers" component={Teachers} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
           <Route path="/fees" component={Fees} />
