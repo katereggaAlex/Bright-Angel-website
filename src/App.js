@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Teachers from "./components/Teachers/Teachers";
 import Footer from "./components/Footer";
-import Resume from "./components/Admission/Resume";
+import Admission from "./components/Admission/Admission";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -37,7 +37,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Teachers" component={Teachers} />
           <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
+          <Route path="/admission" component={Admission} />
           <Route path="/fees" component={Fees} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Contact} />
