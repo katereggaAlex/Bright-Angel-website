@@ -40,7 +40,7 @@ function Admission() {
     />
     <Carousel.Caption>
       <h3>We put God first</h3>
-      <p style={{fontSize:20 }}>We teach our children to honor and to pray to go always if they are to be successful in life.</p>
+      <p style={{fontSize:20 }} >We teach our children to honor and to pray to go always if they are to be successful in life.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
