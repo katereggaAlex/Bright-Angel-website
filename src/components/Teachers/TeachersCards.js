@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
 
 function TeachersCards(props) {
   return (
@@ -13,7 +12,7 @@ function TeachersCards(props) {
           {props.description}
         </Card.Text>
         <Button>
-        <Card.Link href="#">View Picture</Card.Link>
+        <Card.Link href={props.imgPath}>View Picture</Card.Link>
         </Button>
       </Card.Body>
     </Card>

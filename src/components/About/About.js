@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
+import VMO from "./VMO";
 
 
 function About() {
@@ -23,6 +24,7 @@ function About() {
               About  <strong className="purple">Bright Angel Education Centre</strong>
             </h1>
             <Aboutcard />
+            <VMO/>
           </Col>
           <Col
             md={5}
