@@ -16,6 +16,9 @@ html {
 
 .purple {
   color: var(--imp-text-color) !important;
+  font-family: Georgia;
+  font-style: italic;
+  
 }
 
 /* --------- */
@@ -394,6 +397,9 @@ html {
 .icon-colour {
   color: #700c86 !important;
 }
+.img-fluid{
+    background-color:white;
+}
 
 /* --------- */
 /* Footer */
@@ -534,37 +540,35 @@ html {
 /* Admission */
 /* --------- */
 
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
-}
 
-.like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
+/*CONTACT page*/
+.form-group{
+  color: var(--imp-text-color) !important;
+  font-family: Georgia;
+  font-style: italic;
 }
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+.contact-item {
+  margin: 20px 0;
 }
-
-.animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
+.contact-item span {
+  
+  color: var(--imp-text-color) !important;
+  margin-bottom: 10px;
+  display: block;
 }
-@keyframes likeAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+.contact-item i.fa {
+  margin-right: 10px;
+}
+.contact-card{
+   color: rgba(255, 255, 255, 1);
+  font-family: Georgia;
+  font-style: italic;
+  padding-inline-start: 20px;
+  
+}
+.social {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
 }

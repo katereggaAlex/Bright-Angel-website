@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import ContactCard from './ContactCard';
 
 class Contact extends React.Component {
 
@@ -8,6 +9,7 @@ class Contact extends React.Component {
     super(props);
     this.state = {
       name: '',
+      phone:'',
       email: '',
       message: ''
     }
@@ -30,7 +32,7 @@ class Contact extends React.Component {
   }
 
   resetForm() {
-    this.setState({ name: '', email: '', message: '' })
+    this.setState({ name: '',phone:'', email: '', message: '' })
   }
 
   render() {
@@ -42,14 +44,28 @@ class Contact extends React.Component {
             <strong className="purple">Contact Form</strong>
           </h1>
           <p style={{ color: "white" }}>
-              you can send us a message using this form 
+              YOU  CAN SEND US A MESSAGE  
             </p> 
-          <Container style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Container style={{ justifyContent: "center", paddingBottom: "10px" ,boxShadow: "0 0 20px 0 rgba(72,94,116,0.7)" }}>
+            <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+            >
+
             <div className="App">
               <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="name">Phone</label>
+                  <input type="number" className="form-control" id="phone" value={this.state.phone} onChange={this.onNameChange.bind(this)} />
                 </div>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Email address</label>
@@ -62,6 +78,19 @@ class Contact extends React.Component {
                 <button type="submit" className="btn btn-primary">Submit</button>
               </form>
             </div>
+            </Col>
+            <Col
+            md={5}
+            style={{  justifyContent: "right",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+               }}
+            className="about-contacts"
+          >
+            <ContactCard/>
+            
+          </Col>
+        </Row>
 
           </Container>
         </Container>
@@ -71,6 +100,9 @@ class Contact extends React.Component {
 
   onNameChange(event) {
     this.setState({ name: event.target.value })
+  }
+   onPhoneChange(event) {
+    this.setState({ phone: event.target.value })
   }
 
   onEmailChange(event) {

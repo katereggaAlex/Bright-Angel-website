@@ -76,7 +76,7 @@ function Admission() {
       <p style={{fontSize:20 }}>We always want to put that smile on our pupils plus the parents with good service.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item interval={500}>
     <img
       className="d-block w-100 "
       src="https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/library.jpg?alt=media&token=e55303e6-7cf2-43e5-a661-a09c20c24bec"
