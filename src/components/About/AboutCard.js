@@ -12,6 +12,7 @@ function AboutCard() {
             Located at <span className="purple"> Mulago, Kampala-Uganda. <br/> P.o.Box 235 kampala-Uganda<br/>Email-brightangel@gmail.com</span>
             <br />"Bright Angel Education Center is mixed day primary school.
             It was founded by a group of highly qualified and experienced teachers who have been teaching in top schools in Uganda.
+            Currently Kateregga Godfrey is the CEO/CO-FOUNDER of this school in 1998.
             <br />
             <br />
             </p>

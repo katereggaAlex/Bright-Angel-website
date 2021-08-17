@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import welcome from "../../Assets/welcomeimage.jpg";
+//import Footer1 from "../Footer1";
 import Particle from "../Particle";
 import HomeCard from "./HomeCard";
 
@@ -34,6 +35,7 @@ function Home2() {
 
 
       </Container>
+      
     </Container>
   );
 }

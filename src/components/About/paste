@@ -1,0 +1,30 @@
+ <GridItem xs={12} sm={12} md={8}>
+        </GridItem>
+ 
+ 
+ height: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+
+
+
+ <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="/"
+          height="140"
+          image="https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/vision.jpg?alt=media&token=46d7c86f-ec64-4185-8c2d-f7077419e2af"
+          title="Our Vision"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Our Vision
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+           To be a leading school in provision of all round education.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      
+    </Card>

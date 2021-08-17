@@ -16,11 +16,20 @@ import teacher6 from "../../Assets/Projects/teacher6.jpg";
 /* DATA SET CONTAINING IMAGE CARD DATA */
 const itemData = [
   {
+    image: "https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/director.jpg?alt=media&token=3e99feca-70d1-4d70-8095-b33814fab507",
+    title: "Mr. Kateregga Godfrey",
+    description: `He is the CEO/CO-FOUNDER of this school.
+     He is a very committed Person who like serving his community. 
+     He sits on the board of UNEB as senior consultant in lower education`,
+    link: "https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/director.jpg?alt=media&token=3e99feca-70d1-4d70-8095-b33814fab507",
+    cols: 1
+  },
+  {
     image: teacher1,
     title: "Mr. Kateregga Alex",
-    description: `He is the cclass teacher of the primary seven.
+    description: `He is the class teacher of the primary seven.
      He is a very committed teacher who like his job. 
-     He has produced first grades for the ten yearrs he has worked with us.`,
+     He has produced first grades for the ten years he has worked with us.`,
     link: "../../Assets/Projects/teacher1.jpg",
     cols: 1
   },
@@ -35,26 +44,26 @@ const itemData = [
     image: teacher3,
     title: "Madam Tendo Flavia",
     description: "She is the class teacher of primary five. She is so commited and hard working teacher. She has a ten years experience in teaching and she is has worked with big organisations in uganda and across the contient.",
-    link: "",
+    link: "../../Assets/Projects/teacher3.jpg",
     cols: 1
   },
   {
     image: teacher4,
     title: "Madam Nansubuga Annet",
     description: `She is the class teacher of primary four. She is so commited and hard working teacher. She has a ten years experience in teaching and she is sits on board of lower primary council in uganda`,
-    link: "",
+    link: "../../Assets/Projects/teacher4.jpg",
     cols: 1  },
   {
     image: teacher5,
     title: "Madam Teddy Kabuye",
     description: `She is the class teacher of primary two and one. She is so commited and hard working teacher. She has a ten years experience in teaching and she is has worked with big schools in the country and she is so caring and knows how to handle kids.`,
-    link: "",
+    link: "../../Assets/Projects/teacher5.jpg",
     cols: 1 },
   {
     image: teacher6,
     title: "Mr. Tonny Kabuye",
     description: `He is the class teacher of primary three. She is so commited and hard working teacher. He has a ten years experience in teaching and he is has worked with big organisations in uganda and across the contient.`,
-    link: "",
+    link: "../../Assets/Projects/teacher6.jpg",
     cols: 1
   }
 ]

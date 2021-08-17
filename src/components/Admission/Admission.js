@@ -1,12 +1,42 @@
 import { Container,Carousel } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/FEES-STRUCTURE-ADMISSION-FORM.pdf";
+//import pdf from "../../Assets/FEES-STRUCTURE-ADMISSION-FORM.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
+//import fetchFile from "./fetch";
+
 
 function Admission() {
 
+fetch('https://cors-anywhere.herokuapp.com/' + 'https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/pdf',
+    },
+  })
+  .then((response) => response.blob())
+  .then((blob) => {
+    // Create blob link to download
+    const url = window.URL.createObjectURL(
+      new Blob([blob]),
+    );
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute(
+      'download',
+      `Admission_Form.pdf`,
+    );
 
+    // Append to html link element page
+    document.body.appendChild(link);
+
+    // Start download
+    link.click();
+
+    // Clean up and remove the link
+    link.parentNode.removeChild(link);
+  });
+  
   return (
     
     <Container fluid className="project-section">
@@ -21,12 +51,20 @@ function Admission() {
         Then submit the filed forms to the school office.</p> 
         <Container style={{ justifyContent: "center", height: "100%", paddingBottom: "10px" }}>
 
-          {/* please add your download link in the props below  */}
-          <a href="https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c" download= "https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c">
-            <Button variant="primary" href={pdf} target="_blank">
-              <AiOutlineDownload />&nbsp;Download Admission Form
-            </Button>
-          </a>
+          {/* please add your download link in the props below
+          href="https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c" 
+          download= "https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c  */}
+        <a
+                href="https://firebasestorage.googleapis.com/v0/b/school-website-bright-angel.appspot.com/o/FEES-STRUCTURE-ADMISSION-FORM.pdf?alt=media&token=bccf9676-3b2d-4395-986d-7d3fcfa1a88c"
+                target="_blank"
+                rel="noreferrer"
+                download ="Admission_Form.pdf"
+                  >  
+          <Button onClick variant="primary">
+          <AiOutlineDownload />  Download Admission Form
+         </Button>
+        </a>
+
 
         </Container>
       </Container>

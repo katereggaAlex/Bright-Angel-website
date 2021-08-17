@@ -9,7 +9,6 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-//import {FaChalkboardTeacher} from "react-icons/fa";
 import {GrGallery} from "react-icons/gr"; 
 import { SiCashapp } from "react-icons/si";
 import { MdContactMail } from "react-icons/md";

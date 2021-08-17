@@ -6,6 +6,7 @@ import laptopImg from "../../Assets/about.png";
 import VMO from "./VMO";
 
 
+
 function About() {
   return (
     <Container fluid className="about-section">
@@ -33,10 +34,16 @@ function About() {
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
+          <Col md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img">
+              
+          </Col>
         </Row>
         
         
       </Container>
+     
     </Container>
   );
 }

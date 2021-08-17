@@ -563,12 +563,13 @@ html {
    color: rgba(255, 255, 255, 1);
   font-family: Georgia;
   font-style: italic;
-  padding-inline-start: 20px;
+  padding-inline-start: 25px;
+  padding-top: 35px;
   
 }
 .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
-  margin-top: 50px;
-  text-align: center;
+  border-top: 1px solid rgba(158, 52, 52, 0.15);
+  padding-top: 150px;
+  margin-top: 10px;
+  text-align: left;
 }
