@@ -46,7 +46,7 @@ export default function ContactUs() {
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
                            <label htmlFor="name">Name</label>
-                            <input type="text" className="form-control" placeholder="Name" name="from_name"/>
+                            <input type="text" className="form-control" placeholder="Name" name="name"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
                           <label htmlFor="exampleInputEmail1">Email address</label>
