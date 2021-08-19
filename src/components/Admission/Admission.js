@@ -1,9 +1,8 @@
 import { Container,Carousel } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-//import pdf from "../../Assets/FEES-STRUCTURE-ADMISSION-FORM.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-//import fetchFile from "./fetch";
+
 
 
 function Admission() {
